@@ -199,7 +199,7 @@ impl ParallelCommand {
             ParallelCommand::FileDrop(path) => nvim
                 .cmd(
                     vec![
-                        ("cmd".into(), "tabnew".into()),
+                        ("cmd".into(), "e".into()),
                         ("magic".into(), vec![("file".into(), false.into())].into()),
                         ("args".into(), vec![Value::from(path)].into()),
                     ],
